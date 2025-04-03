@@ -1,0 +1,70 @@
+:root {
+    --primary: #ab0a87;
+    --secondary: #320458;
+    --footer-height: 4vh;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    min-height: fit-content;
+    margin-bottom: 5px;
+}
+
+footer{
+    color: white;
+    height: var(--footer-height);
+    text-align: center;
+    width: 100%;
+    align-content: center;
+    align-self: baseline;
+}
+
+.w-20{
+    width: 19% !important;
+}
+
+.content {
+    margin: 4vh 1vw 0;
+    height: 88%;
+}
+
+.white {
+    --bs-bg-opacity: .6;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important
+}
+
+@media (max-width: 576px) {
+    #poesie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #poesie .white {
+        width: 90% !important;
+        margin-bottom: 1rem;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    #title {
+        color: white !important;
+    }
+}
