@@ -21,12 +21,13 @@ body {
 }
 
 footer{
-    color: white;
+    color: white !important;
     height: var(--footer-height);
     text-align: center;
     width: 100%;
     align-content: center;
     align-self: baseline;
+    margin-top: 1rem !important;
 }
 
 .w-20{
@@ -66,5 +67,11 @@ footer{
 
     #title {
         color: white !important;
+    }
+}
+
+@media (max-width: 940px) and (min-width: 431px){
+    footer{
+        margin-top: 3.5rem !important;
     }
 }
